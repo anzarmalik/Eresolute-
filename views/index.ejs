@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+     <br>
+     <br>
+     <br>
+     <!--  Please ignore ui design and use postman ... -->
+     <h2>Save Data</h2>  
+     <form action="/users" method="post" enctype="multipart/form-data">
+     
+     <input type="text" name="name" class="name" id="name" placeholder="name" required >
+      
+     <input type="file" name="filename" placeholder="Image upload" multiple required >
+
+     <input type="submit" name="submit" value="Submit  ">
+
+     </form>
+     
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+
+     <!-- <h2>Update</h2>
+     <form action="/update" method="POST" enctype="multipart/form-data">
+      
+      <input type="number" name="id" class="id" placeholder="Write id" required >
+      <input type="text" name="name" class="name" id="name" placeholder="name" required>
+      <input type="file" name="filename" placeholder="Image upload" multiple required >
+     
+      <input type="submit" name="submit" value="   Update  ">
+ 
+      </form>  -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>View Data</h2>
+    <form action="/views" method="GET" enctype="multipart/form-data">
+
+     <input type="submit" name="submit" value=" View All " >
+
+     </form> 
+    <br>
+
+    
+
+
+  </body>
+  <script>
+ 
+  
+  
+ 
+  </script>
+</html>
